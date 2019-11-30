@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Mobile styles*/
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: darkred;
+    }
+
+    .menu {
+        font-size: 0.5em;
+    }
+
+    article {
+        width: 100%;
+        height: 100px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+    .form-row-label{
+        width: 90%;
+        padding-right: 0;
+    }
+
+    .legacy-form-row {
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .legacy-form-row legend {
+        margin-bottom: 15px;
+    }
+
+    .legacy-form-row .radio-label {
+        display: block;
+        font-size: 0.9em;
+        padding: 0 20px 0 10px;
+        border: 1px solid red ;
+    }
+
+    .legacy-form-row input[type="radio"] {
+        margin-top: 2px;
+    }
+
+    .legacy-form-row .radio-label,
+    .legacy-form-row input[type="radio"] {
+        float: left;
+    }
+
+    .form-row .instructions {
+        margin-left: 0;
+        margin-right: 50px;
+        text-align: left;
+        border: 1px solid red;
+    }
+.form-row button{
+    margin-left: 120px;
+}
+}
+
+/*Tablet styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: darkcyan;
+    }
+
+    .menu {
+        font-size: 0.7em;
+    }
+
+    article {
+        border-color: red;
+        width: 80%;
+        height: 150px;
+    }
+}
+
+/*Desktop styles*/
+@media only screen and (min-width: 961px) {
+    body {
+        /*width: 1200px;*/
+
+        /*background-image: url("../images/fietser.gif");*/
+        /*background-position: top center;*/
+        /*background-size: cover;*/
+        /*background-repeat: no-repeat;*/
+        /*background-attachment: scroll;*/
+
+        background-color: lightblue;
+        margin: 0 auto;
+    }
+
+    /*header {*/
+    /*    order: 2;*/
+    /*}*/
+
+    /*main {*/
+    /*    order: 1;*/
+    /*}*/
+
+
+    table {
+        border-spacing: 0;
+    }
+
+
+    menu {
+        width: 100%;
+        color: white;
+        background-color: lightseagreen;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+    }
+
+    .menu {
+        list-style: none;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        /*border: 1px solid red;*/
+        align-items: center;
+        position: relative;
+    }
+
+    .menu > span {
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .assortiment-menu {
+        display: none;
+    }
+
+    .assortiment:hover .assortiment-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background: #5995DA;
+        border-radius: 5px;
+        padding: 0.4em;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .assortiment-menu li {
+        list-style: none;
+        border-bottom: 1px solid #FFF;
+        padding: 0 40px 10px 20px;
+        margin: 10px;
+    }
+
+    .assortiment-menu li:last-of-type {
+        border-bottom: none;
+    }
+
+    .date,
+    .login {
+        align-self: flex-end;
+    }
+
+    .links {
+        /*border: 1px solid white;*/
+        /*display: flex;*/
+        /*justify-content: flex-end;*/
+    }
+
+    /*.signup {*/
+    /*    margin-left: auto;*/
+    /*}*/
+    /*.login {*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    .social,
+    .subscribe {
+        align-self: flex-end;
+        margin-bottom: 5px;
+    }
+
+    header {
+        width: 100%;
+        color: #5995DA;
+        background-color: #D6E9FE;
+        display: flex;
+        justify-content: center;
+        border: 1px solid blue;
+
+    }
+
+    .header {
+        width: 800px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        /*border: 1px solid blue;*/
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .item {
+        display: block;
+    }
+
+
+    main {
+        /*width: 600px;*/
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        width: 95%;
+        height: auto;
+        /*margin: 0 12.5% 0 12.5%;*/
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    article {
+        background-color: white;
+        border: 2px solid lightblue;
+        width: 300px;
+        height: 300px;
+        /*max-height: 400px;*/
+    }
+
+    article .contactformulier-header {
+        width: 600px;
+    }
+
+    main h1, h2, h3, h4 {
+        border: 2px solid seagreen;
+        border-radius: 5px;
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*flex-wrap: wrap;*/
+        align-items: center;
+
+    }
+
+    form-row {
+        width: 33%;
+        border: 1px solid red;
+        padding: 20px 0 50px 50px;
+
+    }
+
+    .form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .contactformulier-header {
+        text-align: center;
+        background-color: mediumseagreen;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contactformulier-header h1 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+    }
+
+    .contactformulier {
+        text-align: center;
+        background-color: mediumseagreen;
+        border: 1px solid seagreen;
+        border-radius: 5px;
+
+        height: auto;
+        margin: 20px;
+        padding: 5px 5px 0 5px;
+    }
+
+    .form-row {
+        margin: 20px 0;
+        align-items: flex-start;
+
+        display: flow; /*zo blijft het in het midden*/
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row select,
+    .form-row textarea {
+        flex-direction: row;
+        align-items: flex-start;
+
+        background-color: white;
+        border: 1px solid palegreen;
+        border-radius: 3px;
+        width: 250px;
+        padding: 0.5em;
+        font-size: 0.8em;
+        height: initial;
+    }
+
+    .form-row input[type="text"]:invalid,
+    .form-row input[type="email"]:invalid {
+        border: 1px solid red;
+        color: darkred;
+        box-shadow: none;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
+        background-color: white;
+    }
+
+    .form-row-label {
+        margin-bottom: 0.9em;
+        text-align: right;
+        width: 120px;
+        padding-right: 20px;
+    }
+
+
+    .legacy-form-row legend {
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+        margin-bottom: 15px;
+
+        float: left;
+    }
+
+    .legacy-form-row {
+        margin-bottom: 10px;
+    }
+
+    .legacy-form-row legend {
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+        float: left;
+    }
+
+    .form-row select {
+        width: 100%;
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .drop-down select {
+        margin-top: 1em;
+    }
+
+    .form-row textarea {
+        font-size: 0.9em;
+        border: 1px solid darkolivegreen;
+        resize: none;
+    }
+
+    .form-row .instructions {
+        margin-left: 120px;
+        text-align: center;
+    }
+
+    .form-row .checkbox-label {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-left: 120px;
+    }
+
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+
+        color: lightgreen;
+        background-color: olivedrab;
+
+        border: 1px solid darkolivegreen;
+        border-radius: 3px;
+
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .form-row button:hover {
+        background-color: seagreen;
+    }
+
+    .form-row button:active {
+        background-color: darkseagreen;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-item {
+        border: 1px solid white;
+        background-color: antiquewhite;
+        height: 200px;
+        flex: 1;
+    }
+
+    .footer-one,
+    .footer-three {
+        background-color: #5995DA;
+        flex: initial;
+        width: 300px;
+    }
+}
